@@ -768,6 +768,9 @@ class BuildOpenCore:
             self.config["PlatformInfo"]["SMBIOS"]["BIOSVersion"] = "9999.999.999.999.999"
             self.config["PlatformInfo"]["UpdateNVRAM"] = True
             self.config["PlatformInfo"]["UpdateSMBIOS"] = True
+            self.config["PlatformInfo"]["DataHub"]["SystemProductName"] = self.model
+            self.config["PlatformInfo"]["SMBIOS"]["BoardVersion"] = self.model
+            self.config["PlatformInfo"]["SMBIOS"]["SystemProductName"] = self.model
 
         def moderate_serial_patch(self):
             if self.constants.custom_cpu_model == 0 or self.constants.custom_cpu_model == 1:
