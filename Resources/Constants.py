@@ -376,6 +376,10 @@ class Constants:
     @property
     def fw_bus_path(self):
         return self.payload_kexts_path / Path(f"FireWire/IOFireWireSerialBusProtocolTransport-v{self.fw_kext}.zip")
+    
+    @property
+    def brightness_test(self):
+        return self.payload_kexts_path / Path(f"Brightness")
 
     # Build Location
     @property

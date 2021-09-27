@@ -267,3 +267,7 @@ BackupLocations = [
     "System/Library/PrivateFrameworks/AppleGVA.framework",
     "System/Library/PrivateFrameworks/AppleGVACore.framework",
 ]
+
+BrightnessTest = [
+    "AppleGraphicsControl.kext"
+]

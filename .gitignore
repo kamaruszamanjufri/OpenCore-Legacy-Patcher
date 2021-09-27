@@ -9,7 +9,7 @@ OCLP-GUI.command
 /dist
 /.vscode
 __pycache__/
-*.kext
+
 *.py[cod]
 *$py.class
 /docs/.vuepress/dist

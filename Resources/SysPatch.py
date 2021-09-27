@@ -398,6 +398,12 @@ set million colour before rebooting"""
         else:
             print("- Installing basic Sandy Bridge Framebuffer Kext patches for generic OS")
             self.add_new_binaries(SysPatchArray.AddIntelGen2Accel, self.constants.legacy_intel_gen2_path)
+        self.gpu_demux_sandy()
+        
+    
+    def gpu_demux_sandy(self):
+        print("- Adding EXPERIMENTAl AppleGraphicsControl patch for deMUX machines")
+        self.add_new_binaries(SysPatchArray.BrightnessTest, self.constants.brightness_test)
 
     def gpu_framebuffer_ivybridge_master(self):
         if self.constants.detected_os == self.constants.monterey:
